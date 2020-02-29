@@ -7,15 +7,21 @@ public class PlayerController : MonoBehaviour
     public float speed = 3.0F;
     public float rotateSpeed = 3.0F;
 
+    private InputMaster input;
+    private Vector2 movement;
 
-    void Update()
+    private void Awake()
     {
+        input = new InputMaster();
+    }
 
-
+    private void Update()
+    {
         CharacterController controller = GetComponent<CharacterController>();
 
         // Rotate around y - axis
-        transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
+        movement = input.Player.Movement.ReadValue<Vector2>();
+        transform.Rotate(0, movement.x * rotateSpeed, 0);
 
         // Move forward / backward
         Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -23,8 +29,15 @@ public class PlayerController : MonoBehaviour
         controller.SimpleMove(forward * curSpeed);
 
         Physics.gravity = new Vector3(0, -30.0F, 0);
+    }
 
+    private void OnEnable()
+    {
+        input.Enable();
+    }
 
-
+    private void OnDestroy()
+    {
+        input.Dispose();
     }
 }
