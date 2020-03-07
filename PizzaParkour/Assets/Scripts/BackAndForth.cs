@@ -36,11 +36,11 @@ public class BackAndForth : MonoBehaviour
             sinValue *= -1;
         }
 
-        Vector3 direction = new Vector3();
+        Vector3 direction;
         if (moveDirection == MoveDirection.FORWARD)
         {
             direction = transform.forward;
-        } else if (moveDirection == MoveDirection.UP)
+        } else
         {
             direction = transform.up;
         }
