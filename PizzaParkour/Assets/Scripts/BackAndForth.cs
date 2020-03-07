@@ -16,7 +16,7 @@ public class BackAndForth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float sinValue = Mathf.Sin(Time.time * movementSpeed);
+        float sinValue = Mathf.Sin(Time.timeSinceLevelLoad * movementSpeed);
         transform.position = origin + transform.forward * distance * sinValue;
     }
 }
