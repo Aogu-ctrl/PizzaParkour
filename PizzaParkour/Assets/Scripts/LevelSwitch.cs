@@ -5,21 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class LevelSwitch : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private InputMaster input;
+    private Vector2 movement;
+
+    private void Awake()
     {
-
+        input = new InputMaster();
+        input.Player.Restart.started += context => Restart();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
-
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,6 +26,20 @@ public class LevelSwitch : MonoBehaviour
         {
             SceneManager.LoadScene(2);
         }
+    }
 
+    private void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void OnEnable()
+    {
+        input.Enable();
+    }
+
+    private void OnDestroy()
+    {
+        input.Dispose();
     }
 }
