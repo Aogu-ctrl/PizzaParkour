@@ -4,6 +4,20 @@ using UnityEngine;
 
 public class BackAndForth : MonoBehaviour
 {
+    public enum StartDirection
+    {
+        FORWARD,
+        BACKWARD
+    };
+
+    public enum MoveDirection
+    {
+        FORWARD,
+        UP
+    };
+
+    public StartDirection startDirection;
+    public MoveDirection moveDirection;
     public float movementSpeed;
     public float distance;
     private Vector3 origin;
@@ -17,6 +31,19 @@ public class BackAndForth : MonoBehaviour
     void Update()
     {
         float sinValue = Mathf.Sin(Time.timeSinceLevelLoad * movementSpeed);
-        transform.position = origin + transform.forward * distance * sinValue;
+        if (startDirection == StartDirection.BACKWARD)
+        {
+            sinValue *= -1;
+        }
+
+        Vector3 direction = new Vector3();
+        if (moveDirection == MoveDirection.FORWARD)
+        {
+            direction = transform.forward;
+        } else if (moveDirection == MoveDirection.UP)
+        {
+            direction = transform.up;
+        }
+        transform.position = origin + direction * distance * sinValue;
     }
 }
