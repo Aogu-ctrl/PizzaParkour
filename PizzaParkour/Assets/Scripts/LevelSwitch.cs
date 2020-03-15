@@ -19,13 +19,24 @@ public class LevelSwitch : MonoBehaviour
     {
         if (other.tag == "Death")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(3);
         }
 
         if (other.tag == "Customer1")
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
+
+        if (other.tag == "Car")
+        {
+            SceneManager.LoadScene(4);
+        }
+
+        if (other.tag == "Stair")
+        {
+            SceneManager.LoadScene(5);
+        }
+
     }
 
     private void Restart()
