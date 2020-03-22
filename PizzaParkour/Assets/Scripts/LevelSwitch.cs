@@ -24,6 +24,7 @@ public class LevelSwitch : MonoBehaviour
 
         if (other.tag == "Customer1")
         {
+            SaveProgress();
             SceneManager.LoadScene(3);
         }
 
@@ -37,6 +38,33 @@ public class LevelSwitch : MonoBehaviour
             SceneManager.LoadScene(5);
         }
 
+        if (other.tag == "DarkRoom")
+        {
+            SceneManager.LoadScene(0);
+        }
+
+    }
+
+    private void SaveProgress()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+        switch (sceneName)
+        {
+            case "Staircase":
+                SaveData.current.isLevelCompleted[Level.Staircase] = true;
+                break;
+            case "ParkingLot":
+                SaveData.current.isLevelCompleted[Level.ParkingLot] = true;
+                break;
+            case "DarkRoom":
+                SaveData.current.isLevelCompleted[Level.DarkRoom] = true;
+                break;
+            default:
+                Debug.LogErrorFormat("Scene {0} not found.", sceneName);
+                break;
+        }
+
+        SerializationManager.Save("Save", SaveData.current);
     }
 
     private void Restart()

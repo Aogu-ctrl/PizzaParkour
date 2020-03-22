@@ -8,6 +8,7 @@ TagManager:
   - Death
   - Car
   - Stair
+  - DarkRoom
   layers:
   - Default
   - TransparentFX
