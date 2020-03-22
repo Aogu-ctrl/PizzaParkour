@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 134e4b290226ab447847458171890ecb
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      74: 4219266326801906582
+    second: Body|BodyAction
+  - first:
+      74: -406014298968485589
+    second: Body|CircleAction
+  - first:
+      74: -7687050157170287468
+    second: Body|CubeAction
+  - first:
+      74: -5551098821158764661
+    second: Body|CylinderAction
+  - first:
+      74: -6883292230985407194
+    second: Body|EarAction
+  - first:
+      74: -7375332792857594054
+    second: Body|mouthAction
+  - first:
+      74: 6573994226547885739
+    second: Body|Right arm.001Action
+  - first:
+      74: -8581850291732795028
+    second: Body|Right armAction
+  - first:
+      74: 7902629366305639136
+    second: Body|ScreenAction
+  - first:
+      74: 8889337519470373129
+    second: Cube|BodyAction
+  - first:
+      74: 4801908350565761361
+    second: Cube|CircleAction
+  - first:
+      74: -3999578356269874737
+    second: Cube|CubeAction
+  - first:
+      74: -4438923420132555670
+    second: Cube|CylinderAction
+  - first:
+      74: -9176949861114688875
+    second: Cube|EarAction
+  - first:
+      74: 5510498904540188028
+    second: Cube|mouthAction
+  - first:
+      74: -4343314118054714030
+    second: Cube|Right arm.001Action
+  - first:
+      74: 7009336756377219802
+    second: Cube|Right armAction
+  - first:
+      74: 4216028626510310785
+    second: Cube|ScreenAction
+  - first:
+      74: 1344690910123344725
+    second: Ear|BodyAction
+  - first:
+      74: 2231466118128294114
+    second: Ear|CircleAction
+  - first:
+      74: 6273755800753345122
+    second: Ear|CubeAction
+  - first:
+      74: -5670073399314281141
+    second: Ear|CylinderAction
+  - first:
+      74: 6039354115334868153
+    second: Ear|EarAction
+  - first:
+      74: 7899075509400533611
+    second: Ear|mouthAction
+  - first:
+      74: -2811920207037666634
+    second: Ear|Right arm.001Action
+  - first:
+      74: 1822902811769284799
+    second: Ear|Right armAction
+  - first:
+      74: -5665478260792987737
+    second: Ear|ScreenAction
+  - first:
+      74: 995453292400919337
+    second: Screen|BodyAction
+  - first:
+      74: 5580433629382408057
+    second: Screen|CircleAction
+  - first:
+      74: 3273121110268394820
+    second: Screen|CubeAction
+  - first:
+      74: 8907561638357959553
+    second: Screen|CylinderAction
+  - first:
+      74: -9032291284771435535
+    second: Screen|EarAction
+  - first:
+      74: 6130508774252476658
+    second: Screen|mouthAction
+  - first:
+      74: -1659246650474952906
+    second: Screen|Right arm.001Action
+  - first:
+      74: 6485262499046058360
+    second: Screen|Right armAction
+  - first:
+      74: 6246516709452926736
+    second: Screen|ScreenAction
+  - first:
+      74: 8246840761299647127
+    second: mouth|BodyAction
+  - first:
+      74: 3779781294143960786
+    second: mouth|CircleAction
+  - first:
+      74: -1087093506025539505
+    second: mouth|CubeAction
+  - first:
+      74: 7165330041637015321
+    second: mouth|CylinderAction
+  - first:
+      74: 5945073634222607266
+    second: mouth|EarAction
+  - first:
+      74: 3590761398797411253
+    second: mouth|mouthAction
+  - first:
+      74: 4266756951462491942
+    second: mouth|Right arm.001Action
+  - first:
+      74: 487374597052939267
+    second: mouth|Right armAction
+  - first:
+      74: 5928456801900498661
+    second: mouth|ScreenAction
+  - first:
+      74: -1277820299745417513
+    second: Circle|BodyAction
+  - first:
+      74: 6997882522552206460
+    second: Circle|CircleAction
+  - first:
+      74: 7011660925208157499
+    second: Circle|CubeAction
+  - first:
+      74: -7990677410061033207
+    second: Circle|CylinderAction
+  - first:
+      74: -8240925883743736305
+    second: Circle|EarAction
+  - first:
+      74: -6638339870687090670
+    second: Circle|mouthAction
+  - first:
+      74: 2842201413491167333
+    second: Circle|Right arm.001Action
+  - first:
+      74: -1529158865077100247
+    second: Circle|Right armAction
+  - first:
+      74: 6851290254150258869
+    second: Circle|ScreenAction
+  - first:
+      74: -4305455007909806383
+    second: Cylinder|BodyAction
+  - first:
+      74: 3870611473932127853
+    second: Cylinder|CircleAction
+  - first:
+      74: 1376692994432503559
+    second: Cylinder|CubeAction
+  - first:
+      74: -88723805440604879
+    second: Cylinder|CylinderAction
+  - first:
+      74: 1020241933888540474
+    second: Cylinder|EarAction
+  - first:
+      74: 6784905108658197461
+    second: Cylinder|mouthAction
+  - first:
+      74: 70485960955845174
+    second: Cylinder|Right arm.001Action
+  - first:
+      74: -6738672186942610257
+    second: Cylinder|Right armAction
+  - first:
+      74: 4058306387431543300
+    second: Cylinder|ScreenAction
+  - first:
+      74: -6730262923896445576
+    second: Right arm|BodyAction
+  - first:
+      74: 4666880598456934535
+    second: Right arm|CircleAction
+  - first:
+      74: -6284407360629076430
+    second: Right arm|CubeAction
+  - first:
+      74: -7093573491502128918
+    second: Right arm|CylinderAction
+  - first:
+      74: -814125233354918778
+    second: Right arm|EarAction
+  - first:
+      74: 2021252936306708940
+    second: Right arm|mouthAction
+  - first:
+      74: 8053271501299644784
+    second: Right arm|Right arm.001Action
+  - first:
+      74: -1710371022545896610
+    second: Right arm|Right armAction
+  - first:
+      74: 4327018806135822291
+    second: Right arm|ScreenAction
+  - first:
+      74: 8260104179990471744
+    second: Right arm.001|BodyAction
+  - first:
+      74: -3827611437494102074
+    second: Right arm.001|CircleAction
+  - first:
+      74: -6441585542293631666
+    second: Right arm.001|CubeAction
+  - first:
+      74: 3203021491555195164
+    second: Right arm.001|CylinderAction
+  - first:
+      74: 4676837638655335261
+    second: Right arm.001|EarAction
+  - first:
+      74: -3046011254459554947
+    second: Right arm.001|mouthAction
+  - first:
+      74: -7453570425013448381
+    second: Right arm.001|Right arm.001Action
+  - first:
+      74: 1430819757942457461
+    second: Right arm.001|Right armAction
+  - first:
+      74: -8261078420792997980
+    second: Right arm.001|ScreenAction
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
