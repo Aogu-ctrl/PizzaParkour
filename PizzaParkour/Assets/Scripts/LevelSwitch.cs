@@ -42,7 +42,6 @@ public class LevelSwitch : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-
     }
 
     private void SaveProgress()
