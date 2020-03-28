@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/darkroom.unity
+    path: Assets/Scenes/DarkRoom.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/Death.unity
@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Delivered1.unity
     guid: a977a89760f8d324db644021a1ca73e7
   - enabled: 1
-    path: Assets/Scenes/overworld.unity
+    path: Assets/Scenes/Overview.unity
     guid: beded62521ac3e543abaee72c334483a
   - enabled: 1
     path: Assets/Scenes/ParkingLot.unity

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public enum Level
 {
+    Overview,
     Staircase,
     ParkingLot,
     DarkRoom

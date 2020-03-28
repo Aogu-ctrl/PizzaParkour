@@ -6,7 +6,7 @@ public class SaveManager : MonoBehaviour
 {
     void Awake()
     {
-        SaveData.current = (SaveData) SerializationManager.Load("Save");
+        SaveData.current = (SaveData) SerializationManager.Load();
 
         Debug.Log(SaveData.current.isLevelCompleted[Level.Staircase]);
         Debug.Log(SaveData.current.isLevelCompleted[Level.ParkingLot]);

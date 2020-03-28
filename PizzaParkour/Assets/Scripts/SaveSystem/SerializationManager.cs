@@ -7,54 +7,64 @@ using UnityEngine;
 public class SerializationManager
 {
     public static string SAVE_DIRECTORY_PATH = Application.persistentDataPath + "/saves/";
-    public static string SAVE_FILE_EXTENSION = ".pizza";
+    public static string SAVE_FILE_NAME = "Save.pizza";
+    public static string SAVE_PATH = SAVE_DIRECTORY_PATH + SAVE_FILE_NAME;
 
     public static BinaryFormatter formatter = new BinaryFormatter();
 
-    public static bool Save(string saveName, object saveData)
+    public static bool Save(object saveData)
     {
         if (!Directory.Exists(SAVE_DIRECTORY_PATH))
         {
             Directory.CreateDirectory(SAVE_DIRECTORY_PATH);
         }
 
-        string path = SAVE_DIRECTORY_PATH + saveName + SAVE_FILE_EXTENSION;
-        FileStream file = File.Create(path);
+        FileStream file = File.Create(SAVE_PATH);
         formatter.Serialize(file, saveData);
         file.Close();
-        Debug.LogFormat("File save at {0}.", path);
+        Debug.LogFormat("File save at {0}.", SAVE_PATH);
         return true;
     }
 
-    public static object Load(string saveName)
+    public static object Load()
     {
-        string path = SAVE_DIRECTORY_PATH + saveName + SAVE_FILE_EXTENSION;
-        if (!File.Exists(path))
+        if (!File.Exists(SAVE_PATH))
         {
-            Debug.LogErrorFormat("File at {0} does not exist.", path);
+            Debug.LogErrorFormat("File at {0} does not exist.", SAVE_PATH);
             return null;
         }
 
-        Debug.LogFormat("File at {0} exists.", path);
-        FileStream file = File.Open(path, FileMode.Open);
+        Debug.LogFormat("File at {0} exists.", SAVE_PATH);
+        FileStream file = File.Open(SAVE_PATH, FileMode.Open);
 
         try
         {
             object save = formatter.Deserialize(file);
             SaveData saveData = (SaveData) save;
-            Debug.Log(saveData.isLevelCompleted[Level.Staircase]);
-            Debug.Log(saveData.isLevelCompleted[Level.ParkingLot]);
-            Debug.Log(saveData.isLevelCompleted[Level.DarkRoom]);
             return save;
         }
         catch
         {
-            Debug.LogErrorFormat("Failed to load file at {0}.", path);
+            Debug.LogErrorFormat("Failed to load file at {0}.", SAVE_PATH);
             return null;
         }
         finally
         {
             file.Close();
         }
+    }
+
+    public static void Delete()
+    {
+        if (File.Exists(SAVE_PATH))
+        {
+            Debug.LogFormat("File at {0} deleted.", SAVE_PATH);
+            File.Delete(SAVE_PATH);
+        }
+    }
+
+    public static bool SaveExists()
+    {
+        return File.Exists(SAVE_PATH);
     }
 }

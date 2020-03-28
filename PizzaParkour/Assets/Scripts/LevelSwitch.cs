@@ -64,7 +64,7 @@ public class LevelSwitch : MonoBehaviour
                 break;
         }
 
-        SerializationManager.Save("Save", SaveData.current);
+        SerializationManager.Save(SaveData.current);
     }
 
     private void Restart()
