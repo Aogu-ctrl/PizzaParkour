@@ -8,6 +8,7 @@ public class LevelSwitch : MonoBehaviour
 
     private InputMaster input;
     private Vector2 movement;
+    public Animation anim;
 
     private void Awake()
     {
@@ -15,8 +16,10 @@ public class LevelSwitch : MonoBehaviour
         input.Player.Restart.started += context => Restart();
     }
 
+
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.tag == "Death")
         {
             SceneManager.LoadScene(3);
@@ -42,6 +45,11 @@ public class LevelSwitch : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
+
+        if (other.tag == "Pipe")
+        {
+            SceneManager.LoadScene(6);
+        }
     }
 
     private void SaveProgress()
@@ -57,6 +65,9 @@ public class LevelSwitch : MonoBehaviour
                 break;
             case "DarkRoom":
                 SaveData.current.isLevelCompleted[Level.DarkRoom] = true;
+                break;
+            case "Pipe":
+                SaveData.current.isLevelCompleted[Level.Pipe] = true;
                 break;
             default:
                 Debug.LogErrorFormat("Scene {0} not found.", sceneName);

@@ -6,7 +6,8 @@ public enum Level
     Overview,
     Staircase,
     ParkingLot,
-    DarkRoom
+    DarkRoom,
+    Pipe
 }
 
 [System.Serializable]
@@ -38,5 +39,6 @@ public class SaveData
         isLevelCompleted.Add(Level.Staircase, false);
         isLevelCompleted.Add(Level.ParkingLot, false);
         isLevelCompleted.Add(Level.DarkRoom, false);
+        isLevelCompleted.Add(Level.Pipe, false);
     }
 }

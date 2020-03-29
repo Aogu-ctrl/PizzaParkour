@@ -23,5 +23,11 @@ public class SaveManager : MonoBehaviour
             GameObject.Find("DarkRoom").SetActive(false);
             Debug.Log("DarkRoom inactive.");
         }
+
+        if (!SaveData.current.isLevelCompleted[Level.DarkRoom])
+        {
+            GameObject.Find("Pipe").SetActive(false);
+            Debug.Log("Pipe inactive.");
+        }
     }
 }
